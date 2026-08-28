@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* NFCPlate brand system — warm off-white/soft gray, graphite/black, amber accent */
+    --background: 40 30% 98%; /* warm off-white */
+    --background-solid: 0 0% 100%;
+    --foreground: 30 10% 12%; /* graphite/near-black */
+    --foreground-soft: 30 8% 24%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 12%;
+    --primary: 30 10% 12%; /* graphite/black for buttons, controls */
+    --primary-foreground: 40 30% 98%;
+    --primary-hover: 30 10% 18%;
+    --secondary: 40 20% 95%;
+    --secondary-foreground: 30 10% 12%;
+    --muted: 40 15% 94%;
+    --muted-foreground: 30 8% 42%;
+    --accent: 38 70% 52%; /* warm amber/gold — accent only */
+    --accent-foreground: 30 10% 12%;
+    --accent-hover: 38 75% 48%;
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 10% 88%;
+    --input: 30 10% 86%;
+    --ring: 38 70% 52%; /* amber focus ring */
+    --navy: 30 10% 10%; /* dark graphite for dark surfaces */
+    --navy-soft: 30 10% 16%;
+    --chart-1: 38 70% 52%;
+    --chart-2: 30 10% 30%;
+    --chart-3: 158 40% 45%;
+    --chart-4: 28 80% 58%;
+    --chart-5: 0 60% 50%;
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply overflow-x-hidden bg-background text-foreground antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: hsl(var(--accent) / 0.25);
+    color: hsl(var(--foreground));
+  }
+  /* Visible focus states for keyboard users */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .container-np {
+    @apply mx-auto w-full max-w-container px-5 sm:px-6 lg:px-8;
+  }
+  .nav-link {
+    @apply inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+  .card-np {
+    @apply rounded-xl border border-border bg-card shadow-[0_1px_2px_rgba(30,25,20,0.04),0_8px_24px_-12px_rgba(30,25,20,0.12)] transition-all duration-300;
+  }
+  .btn-primary-np {
+    @apply inline-flex h-11 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary-hover hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring active:translate-y-px disabled:pointer-events-none disabled:opacity-60;
+  }
+  .btn-secondary-np {
+    @apply inline-flex h-11 items-center justify-center rounded-lg border border-border bg-background px-5 text-sm font-semibold text-foreground transition-all hover:border-foreground/30 hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring active:translate-y-px;
+  }
+  .btn-accent-np {
+    @apply inline-flex h-11 items-center justify-center rounded-lg bg-accent px-5 text-sm font-semibold text-accent-foreground shadow-sm transition-all hover:bg-accent-hover hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring active:translate-y-px disabled:pointer-events-none disabled:opacity-60;
+  }
+  .badge-np {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide;
+  }
+  .section-pad {
+    @apply py-14 md:py-20;
+  }
+  .bg-grid-subtle {
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--border)) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  .portal-canvas {
+    background-color: #f3efe7;
+    background-image: radial-gradient(circle at 88% 4%, rgba(244, 185, 66, 0.14), transparent 24rem), linear-gradient(rgba(23, 21, 18, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(23, 21, 18, 0.025) 1px, transparent 1px);
+    background-size: auto, 32px 32px, 32px 32px;
+  }
+  .portal-panel {
+    @apply rounded-2xl border border-black/[0.08] bg-white shadow-lg;
+  }
+  .portal-stat {
+    @apply relative overflow-hidden rounded-2xl border border-black/[0.08] bg-white p-5 shadow-lg;
+  }
+  .portal-stat::after {
+    content: '';
+    position: absolute;
+    inset: auto -2rem -3rem auto;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 9999px;
+    background: rgba(244, 185, 66, 0.1);
+  }
+  .portal-kicker {
+    @apply text-[10px] font-bold uppercase tracking-[0.2em] text-[#9b6600];
+  }
+  .portal-title {
+    @apply font-display text-2xl font-black tracking-[-0.035em] text-foreground sm:text-3xl;
+  }
+  .portal-input {
+    @apply h-11 rounded-xl border border-black/10 bg-white px-3 text-sm text-foreground shadow-sm placeholder:text-muted-foreground/70 focus-visible:border-[#d89c22] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f4b942]/25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

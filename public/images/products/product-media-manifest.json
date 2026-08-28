@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-23",
+  "images": [
+    {
+      "filename": "nfcplate-google-review-stand-black-front.png",
+      "productSlug": "google-review-stand",
+      "platform": "google",
+      "variant": "black",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Google Review Stand in black with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-google-review-stand-white-front.png",
+      "productSlug": "google-review-stand",
+      "platform": "google",
+      "variant": "white",
+      "width": 1408,
+      "height": 768,
+      "role": "variant",
+      "alt": "Google Review Stand in white with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-facebook-nfc-stand-blue-front.png",
+      "productSlug": "facebook-nfc-stand",
+      "platform": "facebook",
+      "variant": "blue",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Facebook NFC Stand in blue with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-instagram-nfc-stand-gradient-front.png",
+      "productSlug": "instagram-nfc-stand",
+      "platform": "instagram",
+      "variant": "gradient",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Instagram NFC Stand with gradient finish, NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-tripadvisor-review-stand-green-front.png",
+      "productSlug": "tripadvisor-review-stand",
+      "platform": "tripadvisor",
+      "variant": "green",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Tripadvisor Review Stand in green with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-trustpilot-review-stand-black-green-front.png",
+      "productSlug": "trustpilot-review-stand",
+      "platform": "trustpilot",
+      "variant": "black-green",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Trustpilot Review Stand in black and green with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-yelp-review-stand-red-front.png",
+      "productSlug": "yelp-review-stand",
+      "platform": "yelp",
+      "variant": "red",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Yelp Review Stand in red with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-tiktok-follow-stand-black-front.png",
+      "productSlug": "tiktok-follow-stand",
+      "platform": "tiktok",
+      "variant": "black",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "TikTok Follow Stand in black with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-multi-link-nfc-stand-black-front.png",
+      "productSlug": "multi-link-nfc-stand",
+      "platform": "multi-link",
+      "variant": "black",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Multi-Link NFC Stand in black with NFC tap and QR code on a weighted base"
+    },
+    {
+      "filename": "nfcplate-social-growth-stand-bundle.png",
+      "productSlug": "social-growth-stand-bundle",
+      "platform": "multi-link",
+      "variant": "bundle",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Social Growth Stand Bundle containing Facebook, Instagram, and TikTok NFC stands"
+    },
+    {
+      "filename": "nfcplate-reputation-review-stand-bundle.png",
+      "productSlug": "reputation-review-stand-bundle",
+      "platform": "multi-link",
+      "variant": "bundle",
+      "width": 1408,
+      "height": 768,
+      "role": "primary",
+      "alt": "Reputation Review Stand Bundle containing Google, Tripadvisor, and Yelp NFC review stands"
+    }
+  ]
+}
